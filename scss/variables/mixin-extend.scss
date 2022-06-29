@@ -1,0 +1,34 @@
+// atajos
+
+$tipografia1: 'Covered By Your Grace',
+cursive;
+$gris: #a9a9a9;
+
+// extend
+%estilo1 {
+    text-align: center;
+    font-family: $tipografia1;
+    color: yellow;
+    text-decoration: none;
+}
+
+%estilofooter {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// mixin
+@mixin imgcarousel {
+    margin: auto;
+    max-height: 80vh;
+    max-width: 95%;
+}
+
+@mixin anclafooter {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}

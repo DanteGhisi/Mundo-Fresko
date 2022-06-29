@@ -1,0 +1,25 @@
+.main {
+    .carousel-inner {
+        margin: 3rem auto;
+
+        img {
+            @include imgcarousel();
+        }
+    }
+
+    .eslogan {
+        color: $gris;
+    }
+
+    .accordion {
+        padding-right: 10rem;
+        padding-bottom: 5rem;
+    }
+
+    .saxo {
+        padding: 0;
+        max-width: 40vw;
+        border-radius: .5rem;
+    }
+
+}
