@@ -5,7 +5,7 @@
 body {
   background-color: black; }
 
-.header_titulo a {
+.header_titulo a, h1.titulos {
   text-align: center;
   font-family: "Covered By Your Grace", cursive;
   color: yellow;
@@ -33,7 +33,7 @@ body {
   .main .carousel-inner img {
     margin: auto;
     max-height: 80vh;
-    max-width: 95%; }
+    max-width: 90%; }
 
 .main .eslogan {
   color: #a9a9a9; }
@@ -46,6 +46,83 @@ body {
   padding: 0;
   max-width: 40vw;
   border-radius: .5rem; }
+
+body main {
+  padding-top: 5vh; }
+
+section.galeria.evento-fotos {
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto; }
+
+section.produc-fotos {
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto; }
+
+section.galeria {
+  display: grid;
+  width: 95%;
+  margin: auto;
+  grid-gap: 2px;
+  padding: 15px 45px;
+  overflow: hidden;
+  justify-items: center;
+  align-items: center; }
+  section.galeria a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); }
+    section.galeria a:hover {
+      filter: blur(1.5px); }
+    section.galeria a img {
+      width: 100%;
+      vertical-align: top;
+      overflow: hidden;
+      min-height: 300px;
+      object-fit: cover; }
+
+.flyers {
+  display: flex;
+  padding-bottom: 10vh; }
+
+.card {
+  margin: auto; }
+  .card:hover {
+    transform: scale(105%); }
+  .card .alerta {
+    background-color: #ff7575; }
+
+.shopbox {
+  padding-bottom: 16vh; }
+
+.shoptitle {
+  font-size: 58px; }
+
+section.shop {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; }
+
+section.shop {
+  display: grid;
+  width: 90%;
+  margin: auto;
+  grid-gap: 2px;
+  padding: 15px 45px;
+  overflow: hidden;
+  justify-items: center;
+  align-items: center; }
+  section.shop a {
+    display: block;
+    position: relative;
+    overflow: hidden; }
+    section.shop a:hover {
+      filter: blur(5px); }
+    section.shop a img {
+      width: 100%;
+      vertical-align: top;
+      overflow: hidden;
+      max-height: 360px;
+      object-fit: cover; }
 
 .footer {
   height: 10vh; }

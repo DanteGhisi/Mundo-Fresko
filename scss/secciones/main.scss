@@ -1,3 +1,4 @@
+// index
 .main {
     .carousel-inner {
         margin: 3rem auto;
@@ -22,4 +23,109 @@
         border-radius: .5rem;
     }
 
+}
+ 
+// galeria
+body main {
+    padding-top: 5vh;
+}
+h1.titulos{
+    @extend%estilo1;
+}
+
+section.galeria.evento-fotos {
+
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+}
+section.produc-fotos{
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+}
+
+section.galeria {
+    display: grid;
+    width: 95%;
+    margin: auto;
+    grid-gap: 2px;
+    padding: 15px 45px;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+
+    a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 6px rgba($color: black, $alpha: 0.5);
+
+        &:hover {
+            filter: blur(1.5px);
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+            overflow: hidden;
+            min-height: 300px;
+            object-fit: cover;
+        }
+    }
+}
+
+// Eventos
+.flyers{
+    display: flex;
+    padding-bottom: 10vh;
+}
+.card{
+    margin: auto;
+    &:hover{
+        transform: scale(105%);
+    }
+    .alerta{
+        background-color: rgb(255, 117, 117);
+    }
+}
+
+// shop
+.shopbox{
+    padding-bottom: 16vh;
+}
+.shoptitle{
+    font-size: 58px;
+}
+section.shop {
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+section.shop {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-gap: 2px;
+    padding: 15px 45px;
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+
+    a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            filter: blur(5px);
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+            overflow: hidden;
+            max-height: 360px;
+            object-fit: cover;
+        }
+    }
 }
