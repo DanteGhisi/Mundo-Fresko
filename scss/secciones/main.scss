@@ -24,11 +24,9 @@
     }
 
 }
+
  
 // galeria
-body main {
-    padding-top: 5vh;
-}
 h1.titulos{
     @extend%estilo1;
 }
@@ -127,5 +125,27 @@ section.shop {
             max-height: 360px;
             object-fit: cover;
         }
+    }
+}
+@media (max-width: 420px){
+    .eslogan{
+        text-align: center;
+    }
+    .accordion{
+        padding: 1rem 4rem;
+        width: 32rem
+    }
+    .footer{
+        padding-bottom: 2rem;
+    }
+    section.shop{
+        display: block;
+    }
+    .flyers {
+        display: block;
+        padding-bottom: 10vh;
+    }
+    .card{
+        margin: 1rem auto;
     }
 }

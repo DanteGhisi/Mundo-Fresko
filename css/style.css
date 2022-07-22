@@ -17,16 +17,15 @@ body {
   justify-content: center;
   align-items: center; }
 
-.header {
-  height: 10vh; }
-  .header_titulo {
-    text-align: center; }
-    .header_titulo h1 {
-      margin-bottom: 0; }
-    .header_titulo a {
-      font-size: 60px; }
-  .header .navbar-nav a:hover {
-    font-size: 105%; }
+.header_titulo {
+  text-align: center; }
+  .header_titulo h1 {
+    margin-bottom: 0; }
+  .header_titulo a {
+    font-size: 60px; }
+
+.header .navbar-nav a:hover {
+  font-size: 105%; }
 
 .main .carousel-inner {
   margin: 3rem auto; }
@@ -46,9 +45,6 @@ body {
   padding: 0;
   max-width: 40vw;
   border-radius: .5rem; }
-
-body main {
-  padding-top: 5vh; }
 
 section.galeria.evento-fotos {
   grid-template-columns: repeat(7, 1fr);
@@ -123,6 +119,22 @@ section.shop {
       overflow: hidden;
       max-height: 360px;
       object-fit: cover; }
+
+@media (max-width: 420px) {
+  .eslogan {
+    text-align: center; }
+  .accordion {
+    padding: 1rem 4rem;
+    width: 32rem; }
+  .footer {
+    padding-bottom: 2rem; }
+  section.shop {
+    display: block; }
+  .flyers {
+    display: block;
+    padding-bottom: 10vh; }
+  .card {
+    margin: 1rem auto; } }
 
 .footer {
   height: 10vh; }

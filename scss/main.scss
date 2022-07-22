@@ -6,8 +6,12 @@ body{
     background-color: black;
 }
 
+
 @import './variables/mixin-extend';
+
 
 @import './secciones/header.scss';
 @import './secciones/main.scss';
 @import './secciones/footer.scss';
+
+
